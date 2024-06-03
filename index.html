@@ -10,10 +10,33 @@
   </head>
   <body>
     <div id="app">
-      <h1>Product goes here</h1>
+      <div class="nav-bar"></div>
+      <div class="cart">Cart({{ cart.length }})</div>
+      <product-display
+        :premium="premium"
+        @add-to-cart="updateCart"
+        @remove-from-cart="removefromCart"
+      ></product-display>
     </div>
 
     <!-- Import Js -->
     <script src="./main.js"></script>
+
+    <!-- Import Product Display -->
+    <script src="./components/ProductDisplay.js"></script>
+
+    <!-- Import Product Detail -->
+    <script src="./components/ProductDetail.js"></script>
+
+    <!-- Import Review Form -->
+    <script src="./components/RviewForm.js"></script>
+
+    <!-- Import Review List -->
+    <script src="./components/ReviewList.js"></script>
+
+    <!-- Mounted APp -->
+    <script>
+      const mountedApp = app.mount("#app");
+    </script>
   </body>
 </html>
