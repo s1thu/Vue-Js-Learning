@@ -12,6 +12,7 @@
     <div id="app">
       <div class="nav-bar"></div>
       <div class="cart">Cart({{ cart.length }})</div>
+      <h1>{{product}}</h1>
       <product-display
         :premium="premium"
         @add-to-cart="updateCart"

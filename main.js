@@ -5,6 +5,7 @@ const app = Vue.createApp({
     return {
       cart: [],
       premium: false,
+      product,
     };
   },
   methods: {

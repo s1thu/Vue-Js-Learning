@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>TO DO LIST</title>
+    <!-- Import Vue.js -->
+    <script src="https://unpkg.com/vue@3.0.11/dist/vue.global.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <div class="form">
+        <todolist-form @task-submitted="addTask"></todolist-form>
+      </div>
+      <br />
+      <todolists :tasks="tasks" @task-deleted="deleteFromTask"></todolists>
+    </div>
+
+    <!-- Import Mainjs -->
+    <script src="./main.js"></script>
+
+    <!-- Import To-Do-List-Form -->
+    <script src="./components/to-do-list-form.js"></script>
+
+    <!-- Import To-Do-Lists -->
+    <script src="./components/to-do-lists.js"></script>
+
+    <!-- Mounted APP -->
+    <script>
+      const mountedApp = app.mount("#app");
+    </script>
+  </body>
+
+  <style>
+    .table-style {
+      border-collapse: collapse;
+    }
+    h1 {
+      text-align: center;
+    }
+    .form {
+      height: 200px;
+      width: 30%;
+      padding: 10px 10px 10px 10px;
+      border: 3px solid black;
+    }
+
+    .task-form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .task-list {
+      width: 50%;
+    }
+  </style>
+</html>
