@@ -1,11 +1,15 @@
 <script setup>
 import { ref } from 'vue'
-defineProps({
+const one = defineProps({
   event: {
     type: Object,
     required: true
-  }
+  },
+  id:{required: true}
 })
+
+const id = one.id;
+
 </script>
 
 <template>
