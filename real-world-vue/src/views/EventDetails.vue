@@ -26,6 +26,7 @@ onMounted(() => {
 
 <template>
   <div v-if="event">
+    <h1>Your are on page of {{ id }}</h1>
     <h1>{{ event.title }}</h1>
     <p>@{{ event.time }} on {{ event.date }}</p>
     <p>{{ event.description }}</p>
