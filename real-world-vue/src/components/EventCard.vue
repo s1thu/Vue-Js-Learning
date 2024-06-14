@@ -1,4 +1,5 @@
 <script setup>
+
 defineProps({
   event: {
     type: Object,
@@ -7,7 +8,7 @@ defineProps({
   id:{required: true}
 })
 
-const id = one.id;
+
 
 </script>
 
