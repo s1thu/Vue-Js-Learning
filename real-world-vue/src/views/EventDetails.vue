@@ -2,10 +2,6 @@
 import { ref, onMounted } from 'vue'
 import EventService from '@/services/EventService'
 const props = defineProps({
-  event: {
-    type: Object,
-    required: true
-  },
   id: { required: true }
 })
 
