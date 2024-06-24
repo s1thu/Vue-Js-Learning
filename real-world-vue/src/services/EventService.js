@@ -16,7 +16,11 @@ export default {
   getEvent(id) {
     return apiClient.get('/events/' + id)
   },
+<<<<<<< HEAD
   getEventsWithPage(perPage, page) {
+=======
+  getEventsPagination(perPage, page) {
+>>>>>>> f9c806a96a3fca92bd17a4a176782d28b9d38470
     return apiClient.get('/events?_limit=' + perPage + '&_page=' + page)
   }
 }
