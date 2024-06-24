@@ -1,15 +1,11 @@
 <script setup>
-
 defineProps({
   event: {
     type: Object,
     required: true
   },
-  id:{required: true}
+  id: { required: true }
 })
-
-
-
 </script>
 
 <template>
@@ -43,5 +39,8 @@ h1 {
 
 h3 {
   font-size: 1.2rem;
+}
+a {
+  text-decoration: none;
 }
 </style>
